@@ -1,2 +1,2 @@
 #!/bin/bash
-eval "cd back && docker-compose up" 
+eval "cd back && docker-compose up --build" 

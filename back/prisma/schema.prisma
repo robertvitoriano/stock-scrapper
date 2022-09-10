@@ -1,4 +1,3 @@
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -9,7 +8,8 @@ datasource db {
 }
 
 model stock {
-  id      Int      @id @default(autoincrement())
-  name   String   @unique
-  value    Double
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
+  price     Decimal
+  updatedAt DateTime @updatedAt
 }
